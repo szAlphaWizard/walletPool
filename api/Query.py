@@ -3,5 +3,5 @@ from jsonrpcserver.aio import methods
 
 
 @methods.add
-def getSACBalance(address):
+async def getSACBalance(address):
     return 100.0

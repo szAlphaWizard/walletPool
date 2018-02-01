@@ -3,9 +3,9 @@ from jsonrpcserver.aio import methods
 
 
 @methods.add
-def pullSAC(address):
+async def pullSAC(address):
     return True
 
 @methods.add
-def transferSAC(address):
+async def transferSAC(address):
     return True
