@@ -7,16 +7,10 @@
 #  pip install python-bitcoinrpc
 ################################################################################
 
-from bitcoinrpc.authproxy import AuthServiceProxy, JSONRPCException
-#import logging
+from conf.env_conf import CONF
 
-#logging.basicConfig()
-#logging.getLogger("BitcoinRPC").setLevel(logging.DEBUG)
+rpc_connection = CONF['btc_client']
 
-rpc_connection = AuthServiceProxy("http://test:123456@47.52.128.11:19010")
 
-print("getinfo:")
-print(rpc_connection.getinfo())
-
-print("getnewaddress:")
-print(rpc_connection.getnewaddress())
+def get_new_address(password):
+    return rpc_connection.getnewaddress()

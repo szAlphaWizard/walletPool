@@ -2,3 +2,5 @@ jsonrpcserver
 aiohttp
 jsonrpcclient[requests]
 web3
+python-bitcoinrpc
+sqlalchemy

@@ -4,6 +4,7 @@ from aiohttp import web
 from jsonrpcserver.aio import methods
 from web3 import Web3, HTTPProvider
 from conf.env_conf import CONF
+from bitcoinrpc.authproxy import AuthServiceProxy
 
 
 async def handle(request):
@@ -27,11 +28,24 @@ async def handle(request):
         return web.json_response(response, status=response.http_status)
 
 
+sys.path.insert(0, os.path.dirname(__file__))
+eth_url = "http://%s:%s" % (CONF['eth_env']['host'], CONF['eth_env']['port'])
+
+print(eth_url)
+CONF['eth_client'] = Web3(HTTPProvider(eth_url))
+
+btc_url = "http://%s:%s@%s:%s" % (CONF['btc_env']['username'],
+                                  CONF['btc_env']['password'],
+                                  CONF['btc_env']['host'],
+                                  CONF['btc_env']['port'])
+
+print(btc_url)
+CONF['btc_client'] = AuthServiceProxy(btc_url)
+
+
 app = web.Application()
 app.router.add_post('/', handle)
 
 
 if __name__ == '__main__':
-    sys.path.insert(0, os.path.dirname(__file__))
-    CONF['geth_client'] = Web3(HTTPProvider("http://%s:%s" % (CONF['eth_env']['host'], CONF['eth_env']['port'])))
     web.run_app(app, port=5000)
