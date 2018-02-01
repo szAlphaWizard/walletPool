@@ -1,0 +1,3 @@
+jsonrpcserver
+aiohttp
+jsonrpcclient[requests]
