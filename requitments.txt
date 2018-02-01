@@ -1,3 +1,4 @@
 jsonrpcserver
 aiohttp
 jsonrpcclient[requests]
+web3

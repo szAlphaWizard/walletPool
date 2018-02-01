@@ -2,6 +2,8 @@
 import sys, os, json
 from aiohttp import web
 from jsonrpcserver.aio import methods
+from web3 import Web3, HTTPProvider
+from conf.env_conf import CONF
 
 
 async def handle(request):
@@ -31,4 +33,5 @@ app.router.add_post('/', handle)
 
 if __name__ == '__main__':
     sys.path.insert(0, os.path.dirname(__file__))
+    CONF['geth_client'] = Web3(HTTPProvider("http://%s:%s" % (CONF['eth_env']['host'], CONF['eth_env']['port'])))
     web.run_app(app, port=5000)
