@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="24fc34f2-3a22-4f63-a777-b1fb8534086b" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/conf/bitcoin.conf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/access/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/model/__init__.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/wallet/erc20_rpc.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/wallet/eth_rpc.py" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/api/Transfer.py" afterPath="$PROJECT_DIR$/api/Transfer.py" />
-      <change beforePath="$PROJECT_DIR$/api/User.py" afterPath="$PROJECT_DIR$/api/User.py" />
-      <change beforePath="$PROJECT_DIR$/conf/env_conf.py" afterPath="$PROJECT_DIR$/conf/env_conf.py" />
-      <change beforePath="$PROJECT_DIR$/requitments.txt" afterPath="$PROJECT_DIR$/requitments.txt" />
-      <change beforePath="$PROJECT_DIR$/run.py" afterPath="$PROJECT_DIR$/run.py" />
-      <change beforePath="$PROJECT_DIR$/wallet/BitCoinRpc.py" afterPath="$PROJECT_DIR$/wallet/btc_rpc.py" />
-    </list>
+    <list default="true" id="24fc34f2-3a22-4f63-a777-b1fb8534086b" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -165,11 +151,6 @@
               <item name="walletPool" type="b2602c69:ProjectViewProjectNode" />
               <item name="walletPool" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="walletPool" type="b2602c69:ProjectViewProjectNode" />
-              <item name="walletPool" type="462c0819:PsiDirectoryNode" />
-              <item name="conf" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -281,9 +262,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="140" y="43" width="1400" height="917" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
